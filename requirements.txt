@@ -1,0 +1,17 @@
+1. BUILD NEOVIM FROM SOURCE
+
+a) Install Build Prereqs
+Arch: sudo pacman -S base-devel cmake unzip ninja curl
+Debian/Ubuntu: sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+
+b) Build
+git clone https://github.com/neovim/neovim
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+
+
+2. INSTALL PLUGIN PREREQS
+
+Arch:
+Debian/Ubuntu:
