@@ -18,7 +18,7 @@ Debian/Ubuntu:
 
 
 3. CREATE LINK
-ln ~/.config/nvim_minimal ~/.config/nvim
+ln -s ~/.config/nvim_minimal ~/.config/nvim
 
 4. CONFIG
 
