@@ -98,7 +98,7 @@ nvim_tree.setup({
 				bookmarks = false,
 			},
 			glyphs = {
-				file = "F",
+				default = "F",
 				symlink = "L",
 				modified = "M",
 				folder = {
