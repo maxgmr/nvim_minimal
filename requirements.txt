@@ -13,23 +13,26 @@ sudo make install
 
 
 2. INSTALL PLUGIN PREREQS
-Arch: sudo pacman -S ripgrep fd make cmake gcc fzf
-Debian/Ubuntu: sudo apt-get install ripgrep fd-find
+Arch: sudo pacman -S ripgrep fd make cmake gcc fzf unzip wget
+Debian/Ubuntu: sudo apt-get install ripgrep fd-find unzip wget
 
 
 3. CREATE LINK
 ln -s ~/.config/nvim_minimal ~/.config/nvim
 
 4. CONFIG
-Don't forget to uncomment init.lua entry when enabling!
-
 a) Completion
-Enable/disable in plugins.lua
+Enable/disable in plugins.lua, enable/disable crates in init.lua
 
 b) LSP Languages
+Arch: sudo pacman -S npm python rust pkgconf dotnet-runtime dotnet-sdk go ruby
+Debian/Ubuntu: sudo apt-get install npm
 Enable/disable in lsp/mason.lua
 
 c) Formatting
+sudo npm install -g @fsouza/prettierd
+Arch: sudo pacman -S python-black clang shfmt sqlfluff stylua yamlfmt
+      yay -S asmfmt google-java-format
 Enable/disable in conform.lua
 
 d) Syntax Highlighting
