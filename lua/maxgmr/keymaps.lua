@@ -23,17 +23,17 @@ keymap("v", "p", '"_dP', opts)
 -- PLUGIN KEYMAPS
 -- (telescope) find files
 keymap(
-	"n",
-	"<leader>f",
-	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = true }))<CR>",
-	opts
+    "n",
+    "<leader>f",
+    "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = true }))<CR>",
+    opts
 )
 -- (telescope) live grep
 keymap(
-	"n",
-	"<leader>lg",
-	"<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({ previewer = true }))<CR>",
-	opts
+    "n",
+    "<leader>lg",
+    "<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({ previewer = true }))<CR>",
+    opts
 )
 
 -- (nvim-tree) open nvim-tree
@@ -52,13 +52,13 @@ keymap("n", "<S-Tab>", "<Plug>(cokeline-focus-prev)", opts)
 keymap("n", "<Tab>", "<Plug>(cokeline-focus-next)", opts)
 -- (cokeline) jump between buffers
 for i = 1, 9 do
-	keymap("n", ("<F%s>"):format(i), ("<Plug>(cokeline-focus-%s)"):format(i), opts)
+    keymap("n", ("<F%s>"):format(i), ("<Plug>(cokeline-focus-%s)"):format(i), opts)
 end
 vim.keymap.set("n", "<leader>w", function()
-	local curbuf = require("cokeline.buffers").get_current()
-	if curbuf ~= nil then
-		curbuf:delete()
-	end
+    local curbuf = require("cokeline.buffers").get_current()
+    if curbuf ~= nil then
+        curbuf:delete()
+    end
 end, { desc = "close buffer" })
 
 -- (conform) show info
@@ -69,14 +69,3 @@ keymap("n", "<leader>df", ":FormatDisable<CR>", opts)
 keymap("n", "<leader>dF", ":FormatDisable!<CR>", opts)
 -- (conform) enable format on save globally
 keymap("n", "<leader>ef", ":FormatEnable<CR>", opts)
-
--- (unicode_picker) pick a unicode character with telescope
-vim.keymap.set("i", "<C-j>", require("unicode_picker").unicode_chars, opts)
-
--- (cmp-im) toggle IM
-vim.keymap.set("n", "<leader>zh", function()
-	require("cmp_im").toggle()
-end, opts)
-
--- (floaterm) open terminal
---[[ keymap("n", "<C-\\>", ":FloatermToggle --disposable<CR>", opts) ]]
