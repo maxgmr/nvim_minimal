@@ -78,6 +78,8 @@ lazy.setup({
 
 	"nvim-tree/nvim-tree.lua", -- file tree browser
 
+	"willothy/nvim-cokeline", -- buffer line
+
 	{
 		"akinsho/toggleterm.nvim", -- terminal
 		version = "*",
