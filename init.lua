@@ -2,7 +2,7 @@ require("maxgmr.startup")
 require("maxgmr.options")
 require("maxgmr.plugins")
 
-require("maxgmr.colourscheme")
+--[[ require("maxgmr.colourscheme") ]]
 require("maxgmr.cmp")
 require("maxgmr.lsp")
 require("maxgmr.conform")

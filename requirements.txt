@@ -35,3 +35,6 @@ Enable/disable in conform.lua
 
 d) Syntax Highlighting
 Enable/disable in treesitter.lua
+
+e) Colourscheme
+Uncomment init.lua entry
