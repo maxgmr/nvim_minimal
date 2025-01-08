@@ -15,3 +15,23 @@ sudo make install
 
 Arch:
 Debian/Ubuntu:
+
+
+3. CREATE LINK
+ln ~/.config/nvim_minimal ~/.config/nvim
+
+4. CONFIG
+
+Don't forget to uncomment init.lua entry when enabling!
+
+a) Completion
+Enable/disable in plugins.lua
+
+b) LSP Languages
+Enable/disable in lsp/mason.lua
+
+c) Formatting
+Enable/disable in conform.lua
+
+d) Syntax Highlighting
+Enable/disable in treesitter.lua
