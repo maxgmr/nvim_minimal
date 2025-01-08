@@ -1,8 +1,10 @@
-1. BUILD NEOVIM FROM SOURCE
+1. INSTALL NEOVIM (Arch)
+sudo pacman -S neovim
+
+1. BUILD NEOVIM FROM SOURCE (Ubuntu/Debian)
 
 a) Install Build Prereqs
-Arch: sudo pacman -S base-devel cmake unzip ninja curl
-Debian/Ubuntu: sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+sudo apt-get install git ninja-build gettext cmake unzip curl build-essential
 
 b) Build
 git clone https://github.com/neovim/neovim
@@ -12,8 +14,7 @@ sudo make install
 
 
 2. INSTALL PLUGIN PREREQS
-
-Arch: sudo pacman -S ripgrep fd
+Arch: sudo pacman -S ripgrep fd make cmake gcc fzf
 Debian/Ubuntu: sudo apt-get install ripgrep fd-find
 
 
@@ -21,7 +22,6 @@ Debian/Ubuntu: sudo apt-get install ripgrep fd-find
 ln -s ~/.config/nvim_minimal ~/.config/nvim
 
 4. CONFIG
-
 Don't forget to uncomment init.lua entry when enabling!
 
 a) Completion
