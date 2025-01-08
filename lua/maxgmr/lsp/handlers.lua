@@ -1,23 +1,17 @@
 local M = {}
 
 M.setup = function()
-	local signs = {
-		{ name = "DiagnosticSignError", text = "E" },
-		{ name = "DiagnosticSignWarn", text = "W" },
-		{ name = "DiagnosticSignHint", text = "H" },
-		{ name = "DiagnosticSignInfo", text = "I" },
-	}
-
-	for _, sign in ipairs(signs) do
-		vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-	end
-
 	local config = {
 		-- disable virtual text
 		virtual_text = false,
 		-- show signs
 		signs = {
-			active = signs,
+			text = {
+				[vim.diagnostic.severity.ERROR] = "E",
+				[vim.diagnostic.severity.WARN] = "W",
+				[vim.diagnostic.severity.INFO] = "I",
+				[vim.diagnostic.severity.HINT] = "H",
+			},
 		},
 		update_in_insert = true,
 		underline = true,
