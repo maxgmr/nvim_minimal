@@ -37,4 +37,4 @@ d) Syntax Highlighting
 Enable/disable in treesitter.lua
 
 e) Colourscheme
-Uncomment init.lua entry
+Enable/disable in plugins.lua
