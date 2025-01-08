@@ -13,8 +13,8 @@ sudo make install
 
 2. INSTALL PLUGIN PREREQS
 
-Arch:
-Debian/Ubuntu:
+Arch: sudo pacman -S ripgrep fd
+Debian/Ubuntu: sudo apt-get install ripgrep fd-find
 
 
 3. CREATE LINK
