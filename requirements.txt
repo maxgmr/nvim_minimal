@@ -2,7 +2,6 @@
 sudo pacman -S neovim
 
 1. BUILD NEOVIM FROM SOURCE (Ubuntu/Debian)
-
 a) Install Build Prereqs
 sudo apt-get install git ninja-build gettext cmake unzip curl build-essential
 
