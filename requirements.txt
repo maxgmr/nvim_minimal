@@ -26,7 +26,7 @@ Enable/disable in plugins.lua, enable/disable crates in init.lua
 
 b) LSP Languages
 Arch: sudo pacman -S npm python python-pip rust pkgconf dotnet-runtime dotnet-sdk go ruby
-Debian/Ubuntu: sudo apt-get install npm python3-pip dotnet-sdk-9.0 dotnet-runtime-9.0 golang ruby-full
+Debian/Ubuntu: sudo apt-get install npm python3-pip dotnet-sdk-9.0 dotnet-runtime-9.0 golang ruby-full pipx
                curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
                pipx install cmake-language-server
 Enable/disable in lsp/mason.lua
