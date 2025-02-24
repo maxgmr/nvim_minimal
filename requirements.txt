@@ -46,3 +46,7 @@ Enable/disable in treesitter.lua
 
 e) Colourscheme
 Enable/disable in plugins.lua
+
+f) Clipboard
+Arch, Wayland: sudo pacman -S wl-clipboard
+Debian/Ubuntu, Wayland: sudo apt-get install wl-clipboard
