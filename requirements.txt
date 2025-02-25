@@ -8,7 +8,7 @@ sudo apt-get install git ninja-build gettext cmake unzip curl build-essential
 b) Build
 git clone https://github.com/neovim/neovim
 cd neovim
-git checkout release-0.10
+git checkout tags/v0.10.4
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 
